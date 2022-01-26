@@ -3,10 +3,25 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:SimpleYamlDictionaryEditor"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        xmlns:local="clr-namespace:SimpleYamlDictionaryEditor" mc:Ignorable="d"
+        Title="Simple YAML dictionary editor"
+        MinHeight="324" MinWidth="350"
+        Height="354" Width="350">
+
     <Grid>
+        <Label Content="Label" Margin="0,0,10,10" VerticalAlignment="Bottom" HorizontalAlignment="Right" />
+
+        <Grid x:Name="grdBrowse" Height="24" Margin="10,10,10,0" VerticalAlignment="Top" />
+        
+        <Grid x:Name="grdSort" Height="50" Margin="10,44,10,0" VerticalAlignment="Top" />
+
+        <Grid x:Name="grdReplace" Height="50" Margin="10,104,10,0" VerticalAlignment="Top" />
+
+        <Grid x:Name="grdCombine" Height="50" Margin="10,164,10,0" VerticalAlignment="Top" />
+
+        <Grid x:Name="grdManually" Height="50" Margin="10,224,10,0" VerticalAlignment="Top" />
+
+        <Grid x:Name="grdNew" Height="50" Margin="10,284,10,0" VerticalAlignment="Top" />
 
     </Grid>
 </Window>
